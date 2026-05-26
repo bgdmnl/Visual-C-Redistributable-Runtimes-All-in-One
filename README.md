@@ -1,64 +1,97 @@
-Microsoft Visual C++ Redistributable Runtimes All in One
+# 💾 Visual C++ Redistributable Runtimes All in One
 
-A complete all-in-one installer package for Microsoft Visual C++ Redistributables from 2005 to 2022.
+A simple all-in-one installer that automatically installs all major Microsoft Visual C++ Redistributable runtimes (2005 → 2022) using a single `.bat` script.
 
-This package installs all major Visual C++ runtime versions automatically using a single batch script, making it useful for fresh Windows installations, gaming PCs, software compatibility, and fixing missing DLL errors.
+It helps fix missing DLL errors, improve game compatibility, and reduce setup time on fresh Windows installations.
 
-What This Fixes
+---
 
-This package can help solve errors like:
+## ✨ Features
 
-MSVCP140.dll is missing
-VCRUNTIME140.dll is missing
-api-ms-win-crt-runtime-l1-1-0.dll missing
-MSVCR100.dll missing
-The application was unable to start correctly (0xc000007b)
-Games or apps refusing to launch
-Crashes caused by missing Visual C++ runtimes
-Included Versions
-Visual C++ 2005
-Visual C++ 2008
-Visual C++ 2010
-Visual C++ 2012
-Visual C++ 2013
-Visual C++ 2015 / 2017 / 2019 / 2022
+* 📦 Installs all Visual C++ runtimes (2005–2022)
+* ⚙️ Supports both x86 and x64 systems automatically
+* 🚀 Fully automated batch installer (`.bat`)
+* 🧩 Silent / passive installation (no user input needed)
+* 🪟 Works on fresh Windows installs and gaming PCs
+* 🔧 Fixes common runtime / DLL errors
 
-Both x86 and x64 runtimes are included.
+---
 
-How To Use
-1. Download the Repository
+## 🧩 What This Fixes
 
-There is currently no GitHub Release available.
+* `MSVCP140.dll is missing`
+* `VCRUNTIME140.dll is missing`
+* `MSVCR100.dll missing`
+* `api-ms-win-crt-runtime-l1-1-0.dll missing`
+* `0xc000007b` application error
+* Games not launching
+* Missing Visual C++ runtime dependencies
 
-Download the repository as a ZIP file:
+---
 
-Click the green Code button
-Press Download ZIP
+## 📁 Included Files
 
-Or directly clone it using Git:
+* 12x Visual C++ Redistributable `.exe` installers
+* 1x `install_all.bat` script (main installer)
 
+---
+
+## 🚀 How To Use
+
+### 1. Download
+
+There is no GitHub Release available yet.
+
+Download the project as a ZIP:
+
+* Click the green **Code** button
+* Select **Download ZIP**
+
+Or clone it:
+
+```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-2. Extract the ZIP
+```
 
-Unzip the downloaded archive anywhere on your computer.
+---
 
-Make sure all .exe files and the .bat file stay in the same folder.
+### 2. Extract Files
 
-3. Run the Installer
+Unzip the archive anywhere on your PC.
 
-Run:
+⚠️ Important:
+Keep all `.exe` files and `install_all.bat` in the same folder.
 
+---
+
+### 3. Run Installer
+
+Double-click:
+
+```
 install_all.bat
+```
 
-The script will automatically detect your system architecture and install the correct runtimes.
+The script will:
 
-Administrator rights are NOT required in most cases.
+* Detect your system (x86 or x64)
+* Install all required Visual C++ runtimes automatically
+* Run everything silently
 
-Notes
-Silent/passive installation is used for most packages
-Compatible with Windows 7, 8, 10, and 11
-Useful after reinstalling Windows or setting up a new PC
-Disclaimer
+No admin setup or manual configuration required.
 
-All Visual C++ Redistributables belong to Microsoft.
-This repository only packages the official runtime installers together for convenience.
+---
+
+## ⚙️ Notes
+
+* Compatible with Windows 7 / 8 / 10 / 11
+* Fully offline installer package
+* Safe to run multiple times (it will skip/overwrite as needed)
+* Designed for gaming PCs and fresh OS installs
+
+---
+
+## 📄 License
+
+This project redistributes official Microsoft Visual C++ Runtime installers for convenience.
+All rights belong to Microsoft.
